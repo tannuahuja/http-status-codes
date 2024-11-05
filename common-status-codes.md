@@ -35,6 +35,11 @@
 - **Usage**: This status code indicates that the request requires user authentication. It is commonly used in scenarios where API access requires authentication tokens or credentials.
 - **Example**: If a user attempts to access a protected resource without providing valid credentials, the server responds with a `401 Unauthorized` status.
 
+## 403 Forbidden
+- **Meaning**: The server understands the request but refuses to authorize it.
+- **Usage**: This status code indicates that the server has determined that the client does not have permission to access the requested resource. Unlike a `401 Unauthorized` response, which indicates that authentication is required, a `403 Forbidden` response indicates that the server has rejected the request regardless of authentication.
+- **Example**: A user attempting to access an admin panel without the necessary privileges may receive a `403 Forbidden` status, indicating they are not allowed to view that resource.
+
 ## 404 Not Found
 - **Meaning**: The requested resource could not be found on the server.
 - **Usage**: This status code is returned when the server cannot find the requested resource. It may indicate that the resource has been deleted or that the URL was incorrect.
