@@ -15,5 +15,17 @@
 
  
 3XX : means success with some redirection
+
+     300 : (multiple choices) he server offers several options for the resource, and the client must choose one. For example, a page could offer the user options for different languages (English, Spanish, etc.)
+
+     301 : means The resource has been permanently moved to a new URL. Future requests should use the new URL. Example: http://example.com redirects to http://newdomain.com
+
+     302 : means he resource is temporarily located at a different URL. The client should use the original URL for future requests. Example: A temporary redirection from http://example.com to http://temp.com 
+
+300: Multiple options (e.g., language or format choices).
+301: Permanent redirection to a new URL.
+302: Temporary redirection to a new URL.
+
+
 4XX : means request is a failture are the issue with the cleint itself
 5XX : means the issue with the application and the server 
