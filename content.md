@@ -8,6 +8,12 @@ HTTP status codes are three-digit numbers returned by a web server in response t
 4. Standardization: They provide a consistent way for clients and servers to communicate.
 
 
+#### Key HTTP Status Code Categories:
+2xx: Success (e.g., 200 OK means the request was successful).
+3xx: Redirection (e.g., 301 Moved Permanently indicates a resource has been moved to a new location).
+4xx: Client errors (e.g., 404 Not Found means the requested resource doesn’t exist).
+5xx: Server errors (e.g., 500 Internal Server Error indicates a problem on the server).
+
 #### there are many codes but we need to learn only 11 most impt ones
 
 ## 2XX : means success (200, 201, 204)
