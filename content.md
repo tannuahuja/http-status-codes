@@ -45,7 +45,13 @@
                  Incorrect URL formatting.
                  Missing or malformed headers.
                  Badly structured JSON, XML, or form data.
+            eg: a POST request for an api api.github.com/user/name in which we have to give name but instaed of name we passed username so it is a BAD REQUEST     
 
-        401:          
+
+        401: means unautherised/ unauthenticated
+             request requires authentication, but the client has not provided valid credentials. It is commonly used in situations where a user needs to log in or supply an API key to                    access the resource.
+             Common Causes:
+                Missing or incorrect credentials (e.g., username/password, API keys).
+                The client has not logged in or provided authentication information.
 
 ## 5XX : means the issue with the application and the server 
