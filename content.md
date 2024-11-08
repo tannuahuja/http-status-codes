@@ -60,5 +60,20 @@
 
 
         404 :(resource not found) 
+             A 404 error is commonly displayed when a user tries to access a non-existent page on a website, The URL was typed incorrectly (typos, incorrect path)
+             The page or resource was deleted or moved without proper redirection, A broken link or outdated bookmark
+               eg : If you try to visit a page that doesn't exist:  GET /blog/my-nonexistent-post
+               The server will respond with 404 Not Found, indicating that the page doesn't exist or is no longer available.
 
 ## 5XX : means the issue with the application and the server 
+
+         500: means there is some issue in the server or in the application
+            This is a general-purpose error message, which doesn't specify the exact nature of the issue but indicates that something went wrong on the server.
+
+            Common Causes:
+
+Server misconfigurations (e.g., faulty server-side code or server software).
+Database connection failures.
+Unhandled exceptions or errors in server-side application logic.
+Insufficient server resources (e.g., memory, CPU).
+Errors in third-party services or APIs the server relies on.
