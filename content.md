@@ -117,6 +117,10 @@ Both errors are server-side issues, meaning they’re not something the client c
 
 
 
-             
+
+
+for demo we use :
+
+             httpbin.org
              
             
