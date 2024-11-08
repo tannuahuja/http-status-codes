@@ -37,4 +37,15 @@
 
 
 ## 4XX : means request is a failture are the issue with the cleint itself
+(red flag)
+
+        400 : means bad request, The server cannot process the request because the syntax is incorrect or malformed. This could happen if the client sends invalid or incomplete data
+              Common Causes:
+                 Invalid query parameters.
+                 Incorrect URL formatting.
+                 Missing or malformed headers.
+                 Badly structured JSON, XML, or form data.
+
+        401:          
+
 ## 5XX : means the issue with the application and the server 
