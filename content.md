@@ -106,7 +106,7 @@
 
 
 
-##### Key Differences Between 500 and 502:
+### Key Differences Between 500 and 502:
    500 - Internal Server Error: This error indicates a general issue on the server itself. It could be any internal problem, such as misconfiguration, faulty code, or resource exhaustion. The server fails to process the request, but it is not dependent on communication with another server.
    502 - Bad Gateway: This error occurs when the server, acting as a gateway or proxy, receives an invalid or unexpected response from an upstream server. The problem usually involves communication between multiple servers or services.
 
