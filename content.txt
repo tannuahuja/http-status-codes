@@ -1,0 +1,10 @@
+# what are http codes why we ned 
+
+
+
+types :
+there are too mnay types of http codes but 11 are most imptthat we need to learn
+
+2XX : means success 
+3XX : means sucess with some redirection
+4XX : 
