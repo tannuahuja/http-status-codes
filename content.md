@@ -4,6 +4,7 @@
 #### there are many codes but we need to learn only 11 most impt ones
 
 2XX : means success (200, 201, 204)
+
       200 : success (OK)
       
       201 : something is created (an API has uploaded a picture, github created a user, branch using API ) [POST ] request 
