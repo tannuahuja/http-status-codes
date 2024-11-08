@@ -25,7 +25,7 @@
           like moving from /old-page to /new-page 
 
      302 : means he resource is temporarily located at a different URL. The client should use the original URL for future requests. Example: A temporary redirection from http://example.com            to http://temp.com 
-         A temporary redirect, like during maintenance or when you’re redirecting to a login page
+            A temporary redirect, like during maintenance or when you’re redirecting to a login page
      
           HTTP/1.1 302 Found
           Location: http://example.com/login
@@ -41,17 +41,24 @@
 
         400 : means bad request, The server cannot process the request because the syntax is incorrect or malformed. This could happen if the client sends invalid or incomplete data
               Common Causes:
-                 Invalid query parameters.
-                 Incorrect URL formatting.
-                 Missing or malformed headers.
-                 Badly structured JSON, XML, or form data.
+              1.   Invalid query parameters.
+              2.   Incorrect URL formatting.
+              3.   Missing or malformed headers.
+              4.   Badly structured JSON, XML, or form data.
             eg: a POST request for an api api.github.com/user/name in which we have to give name but instaed of name we passed username so it is a BAD REQUEST     
 
 
         401: means unautherised/ unauthenticated
              request requires authentication, but the client has not provided valid credentials. It is commonly used in situations where a user needs to log in or supply an API key to                    access the resource.
              Common Causes:
-                Missing or incorrect credentials (e.g., username/password, API keys).
-                The client has not logged in or provided authentication information.
+              1.  Missing or incorrect credentials (e.g., username/password, API keys).
+              2.   The client has not logged in or provided authentication information.
+
+        403: means forbidden/ unautherised
+             The server understands the request but refuses to authorize it. This is different from a 401 Unauthorized error, where the issue is lack of authentication. A 403 indicates                  that, even with the correct credentials, the client is not allowed to access the resource due to permissions.
+                eg: you have access to the college website but not to the placecemt of student details so u can access only other data but that resource u want to access it gives 403 error                 from the server simply permission issues
+
+
+        404 :(resource not found) 
 
 ## 5XX : means the issue with the application and the server 
