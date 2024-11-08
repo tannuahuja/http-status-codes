@@ -68,12 +68,27 @@
 ## 5XX : means the issue with the application and the server 
 
          500: means there is some issue in the server or in the application
-            This is a general-purpose error message, which doesn't specify the exact nature of the issue but indicates that something went wrong on the server.
+               This is a general-purpose error message, which doesn't specify the exact nature of the issue but indicates that something went wrong on the server.
 
-            Common Causes:
+              Common Causes:
+                  1. Server misconfigurations (e.g., faulty server-side code or server software).
+                  2. Database connection failures.
+                  3. Unhandled exceptions or errors in server-side application logic.
+                  4 . Insufficient server resources (e.g., memory, CPU).
+                  5.  Errors in third-party services or APIs the server relies on.
 
-Server misconfigurations (e.g., faulty server-side code or server software).
-Database connection failures.
-Unhandled exceptions or errors in server-side application logic.
-Insufficient server resources (e.g., memory, CPU).
-Errors in third-party services or APIs the server relies on.
+
+               example : A web application runs a piece of server-side code that attempts to access a database, but the database is down or unreachable. The server returns a 500 Internal                          Server Error to the client because it couldn't complete the request due to the underlying issue.
+
+
+        501 : The server does not support the functionality required to fulfill the request. This typically means that the server either does not recognize the request method (e.g., PUT,                   DELETE, etc.) or lacks the necessary capabilities to process it.       
+
+              Comman causes :
+                   1. The server doesn't support the HTTP method requested (e.g., the client tries to use PUT on a server that only supports GET or POST).
+                   2. The server is out of date or lacks the required software to handle the specific request type (e.g., a feature hasn't been implemented yet)
+
+               example : A client sends a DELETE request to a server that doesn’t support this HTTP method for the given resource. The server responds with 501 Not Implemented because it                       cannot process the DELETE request.
+
+        502 : Bad Gateway
+             
+            
