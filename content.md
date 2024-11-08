@@ -5,7 +5,9 @@
 
 2XX : means success (200, 201, 204)
       200 : success (OK)
+      
       201 : something is created (an API has uploaded a picture, github created a user, branch using API ) [POST ] request 
+      
       204: when there is no content from server to the cleint
 
  we can use 200 for every case also 
