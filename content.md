@@ -1,4 +1,11 @@
 ## why we need http codes and what is the need
+HTTP status codes are three-digit numbers returned by a web server in response to an HTTP request.
+
+#### Why Do We Need HTTP Codes?
+1. Feedback: They tell the client (browser, app, etc.) whether the request was successful or failed, and the nature of the issue.
+2.Error Handling: They help diagnose and troubleshoot problems, whether on the client or server side.
+3.Efficiency: They streamline interactions by summarizing the result of requests in a concise, standardized format.
+4. Standardization: They provide a consistent way for clients and servers to communicate.
 
 
 #### there are many codes but we need to learn only 11 most impt ones
